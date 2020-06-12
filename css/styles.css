@@ -1,0 +1,361 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    line-height: 20px;
+}
+
+.center {
+    width: 90%;
+    margin: auto;
+    max-width: 940px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+    border-bottom: 1px dotted black;
+    margin-bottom: 20px;
+}
+
+body {
+    font-family: Tahoma, Geneva, Kalimati, sans-serif;
+    font-size: 12px;
+    color: black;
+    background-color: #fff;
+}
+
+header,
+main,
+footer {}
+
+header {
+    background-color: #CCFEFE;
+}
+
+.social-links {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.social-links a:first-of-type {
+    padding-right: 10px;
+}
+
+#carroussel {
+    background-color: white;
+    padding-bottom: 30px;
+    border-bottom: 1px solid black;
+}
+
+#carroussel aside {
+    background-color: #CCFEFE;
+    padding-bottom: 30px;
+    padding-top: 25px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+}
+
+#topbar {
+    background-color: #9A99FE;
+    height: 136px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#topbar .center {
+    display: flex;
+    justify-content: space-between;
+}
+
+#topbar nav {
+    margin-top: 62px;
+}
+
+.topbar__logo img {
+    height: 75px;
+    margin-top: 31px;
+}
+
+main {
+    margin-bottom: 30px;
+}
+
+#description__news {
+    padding: 40px 0;
+}
+
+.three-column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.three-column p {
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+#destination {
+    margin-bottom: 15px;
+}
+
+.destination__three-column {
+    display: flex;
+    justify-content: space-between;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.destination__column {
+    width: 32%;
+}
+
+.destination__three-column img {
+    border: 1px dotted black;
+    width: 100%;
+}
+
+#information {
+    background-color: #CCFEFE;
+    padding: 30px 0 10px 0;
+    border-top: 1px solid black;
+}
+
+.information__two-column {
+    display: flex;
+}
+
+.why-us__icon i {
+    font-size: 75px;
+    color: #666;
+    margin-right: 17px;
+}
+
+.information__about-us {
+    padding-right: 22px;
+    width: 50%;
+}
+
+.information__why-us {
+    width: 50%;
+}
+
+.why-us__icon {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 25px;
+}
+
+footer {
+    background-color: #9A99FE;
+    border-top: 1px solid black;
+    margin-bottom: 15px
+}
+
+footer nav ul {
+    list-style-type: none;
+    margin: 15px 0 30px;
+}
+
+footer nav ul li {
+    display: inline;
+}
+
+footer nav ul a {
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+}
+
+.description__news-title {
+    background-color: #9A99FE;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20px 10px 10px 15px;
+    margin-bottom: 15px;
+    min-height: 135px;
+}
+
+.column {
+    margin: 0;
+    width: 32%;
+}
+
+.more-info {
+    color: red;
+}
+
+.button {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #98C870;
+    padding: 8px 10px 8px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.description__news-title h3 {
+    color: white;
+    padding: 10px 0 0 15px;
+    font-size: 15px;
+}
+
+.information__how-to-travel p {
+    padding-bottom: 24px;
+}
+
+.information__about-us p {
+    margin-bottom: 20px;
+}
+
+.copyright {
+    color: #896b96;
+    padding-left: 5px;
+}
+
+
+/* Slideshow container */
+
+.carroussel__container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.carroussel__dots {
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 40px;
+    user-select: none;
+    background-color: #999;
+    opacity: 0.7;
+    margin: 0 10px;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
